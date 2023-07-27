@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(150deg, #190361 0%, #B0F 100%);
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 42.8rem;
+  height: 56.4rem;
+  background-color: #FFFFFF;
+  border-radius: .8rem;
+  box-shadow: 0rem 2rem 5rem 0rem rgba(0, 0, 0, 0.80);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 6.4rem 6.4rem;
+}
+
+h1 {
+  width: 29.3rem;
+  margin-bottom: 1.4rem;
+  font-family: 'Montserrat';
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 2rem;
+  font-family: 'DM sans';
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.card{
+  width: auto;
+  height: 15rem;
+  background: #E4EDF1;
+  display: flex;
+  font-family: 'Dancing Script';
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  border-style: none;
+}
+
+button {
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.screen2 h1 {
+  margin-bottom: 2.7rem;
+}
+
+.screen2 label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 1.7rem;
+}
+
+.screen2 img {
+  margin-bottom: 1.7rem;
+}
+
+.screen2 button {
+  width: 17.4rem;
+  height: 5.2rem;
+  background-color: #FF9500;
+  border-radius: .5rem;
+  color: #FFFFFF;
+  font-family: 'DM sans';
+  font-size: 1.5rem;
+}
+
+.screen1 button:hover{
+  animation: treme 0.3s linear infinite both;
+}
+
+.card {
+  animation: downTop 0.3s;
+}
+
+@keyframes treme {
+ 0% {
+  transform: translate(0);
+ }
+ 20% {
+  transform: translate(-2px, 2px);
+ }
+ 40% {
+  transform: translate(-2px, -2px);
+ }
+ 60% {
+  transform: translate(2px, 2px);
+ }
+ 80% {
+   transform: translate(2px, -2px);
+ }
+ 100% {
+  transform: translate(0);
+ }
+}
+
+@keyframes downTop {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
